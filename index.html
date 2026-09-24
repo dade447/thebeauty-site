@@ -1,1074 +1,649 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-ZA" class="no-js">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Beauty Midrand | Face · Body · Nails</title>
-<meta name="description" content="The Beauty Midrand - Premium beauty salon in Vorna Valley, Midrand. Face, body & nail treatments. 5-star rated. Book online now.">
-<meta name="keywords" content="beauty salon midrand, nails midrand, facials midrand, body massage midrand, vorna valley beauty salon, premium beauty services, the beauty midrand">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Beauty Midrand · Face, Body &amp; Nails in Vorna Valley</title>
+<meta name="description" content="A woman-owned salon in Vorna Valley, Midrand for facials and peels, massage, gel nails, pedicures and waxing. Rated 5.0 from 665 reviews on Fresha. Book online in a minute.">
 <link rel="canonical" href="https://thebeauty.co.za/">
+<meta name="theme-color" content="#0C0A09">
+<meta name="color-scheme" content="dark light">
 
-<!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="The Beauty Midrand">
 <meta property="og:url" content="https://thebeauty.co.za/">
-<meta property="og:title" content="The Beauty Midrand | Premium Beauty Salon in Vorna Valley">
-<meta property="og:description" content="Premium beauty salon in Vorna Valley, Midrand. Face, body & nail treatments. 5-star rated. Book your luxurious escape online today.">
-<meta property="og:image" content="https://thebeauty.co.za/images/logo-dark.jpg">
-
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="favicon.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://thebeauty.co.za/">
-<meta property="twitter:title" content="The Beauty Midrand | Premium Beauty Salon">
-<meta property="twitter:description" content="Premium beauty salon in Vorna Valley, Midrand. Face, body & nail treatments. 5-star rated. Book your luxurious escape today.">
-<meta property="twitter:image" content="https://thebeauty.co.za/images/logo-dark.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Great+Vibes&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-:root {
-  --black: #0a0a0a;
-  --white: #f8f6f3;
-  --cream: #f0ebe4;
-  --warm: #c9a96e;
-  --warm-light: #d4bc8b;
-  --warm-dark: #a88745;
-  --gray: #6b6b6b;
-  --gray-light: #b0b0b0;
-  --font-display: 'Anton', sans-serif;
-  --font-script: 'Great Vibes', cursive;
-  --font-body: 'Outfit', sans-serif;
-}
-
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: var(--font-body);
-  background: var(--white);
-  color: var(--black);
-  overflow-x: hidden;
-  font-weight: 300;
-  line-height: 1.7;
-}
-
-/* ── UTILITY ── */
-.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-.section-pad { padding: 100px 0; }
-.text-center { text-align: center; }
-
-.section-label {
-  font-family: var(--font-script);
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  color: var(--warm);
-  display: block;
-  margin-bottom: 8px;
-}
-
-.section-title {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1.1;
-}
-
-/* ── NAVIGATION ── */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 16px 0;
-  transition: all 0.4s ease;
-}
-
-nav.scrolled {
-  background: rgba(10,10,10,0.95);
-  backdrop-filter: blur(20px);
-  padding: 10px 0;
-  box-shadow: 0 2px 40px rgba(0,0,0,0.3);
-}
-
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-logo img {
-  height: 50px;
-  transition: height 0.3s;
-}
-
-nav.scrolled .nav-logo img { height: 40px; }
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 32px;
-  align-items: center;
-}
-
-.nav-links a {
-  color: var(--white);
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-  position: relative;
-}
-
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--warm);
-  transition: width 0.3s;
-}
-
-.nav-links a:hover { color: var(--warm); }
-.nav-links a:hover::after { width: 100%; }
-
-.nav-cta {
-  background: var(--warm) !important;
-  color: var(--black) !important;
-  padding: 10px 24px;
-  font-weight: 500 !important;
-  letter-spacing: 1px !important;
-  transition: all 0.3s !important;
-}
-
-.nav-cta::after { display: none !important; }
-.nav-cta:hover { background: var(--warm-light) !important; transform: translateY(-1px); }
-
-.mobile-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-.mobile-toggle span {
-  width: 28px;
-  height: 2px;
-  background: var(--white);
-  transition: all 0.3s;
-}
-
-/* ── HERO ── */
-.hero {
-  min-height: 100vh;
-  background: var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(201,169,110,0.08) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 50%, rgba(201,169,110,0.05) 0%, transparent 60%);
-}
-
-.hero-content {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.hero-logo {
-  width: min(340px, 70vw);
-  margin-bottom: 32px;
-  animation: fadeUp 1.2s ease both;
-}
-
-.hero-tagline {
-  font-family: var(--font-script);
-  color: var(--warm);
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
-  animation: fadeUp 1.2s ease 0.3s both;
-}
-
-.hero-sub {
-  color: var(--gray-light);
-  font-size: 0.9rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-top: 24px;
-  animation: fadeUp 1.2s ease 0.5s both;
-}
-
-.hero-buttons {
-  margin-top: 40px;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-  animation: fadeUp 1.2s ease 0.7s both;
-}
-
-.btn {
-  display: inline-block;
-  padding: 14px 36px;
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-}
-
-.btn-primary {
-  background: var(--warm);
-  color: var(--black);
-}
-
-.btn-primary:hover {
-  background: var(--warm-light);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(201,169,110,0.3);
-}
-
-.btn-outline {
-  background: transparent;
-  color: var(--white);
-  border: 1px solid rgba(255,255,255,0.3);
-}
-
-.btn-outline:hover {
-  border-color: var(--warm);
-  color: var(--warm);
-}
-
-.scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: bounce 2s infinite;
-}
-
-.scroll-indicator svg {
-  width: 24px;
-  height: 24px;
-  stroke: var(--gray);
-}
-
-/* ── ABOUT ── */
-.about { background: var(--white); }
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-.about-visual {
-  position: relative;
-}
-
-.about-visual-box {
-  width: 100%;
-  aspect-ratio: 4/5;
-  background: var(--cream);
-  position: relative;
-  overflow: hidden;
-}
-
-.about-visual-box::before {
-  content: '';
-  position: absolute;
-  inset: 20px;
-  border: 1px solid var(--warm);
-  opacity: 0.4;
-}
-
-.about-visual-accent {
-  position: absolute;
-  bottom: -20px;
-  right: -20px;
-  width: 140px;
-  height: 140px;
-  border: 1px solid var(--warm);
-  opacity: 0.3;
-}
-
-.about-rating {
-  position: absolute;
-  top: 30px;
-  right: -30px;
-  background: var(--black);
-  color: var(--white);
-  padding: 20px 24px;
-  text-align: center;
-  z-index: 2;
-}
-
-.about-rating-number {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  color: var(--warm);
-  line-height: 1;
-}
-
-.about-rating-stars {
-  color: var(--warm);
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  margin: 4px 0;
-}
-
-.about-rating-count {
-  font-size: 0.75rem;
-  color: var(--gray-light);
-  letter-spacing: 1px;
-}
-
-.about-text p {
-  color: var(--gray);
-  margin-bottom: 20px;
-  font-size: 1rem;
-}
-
-.about-features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 32px;
-}
-
-.about-feature {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.85rem;
-  color: var(--black);
-  font-weight: 400;
-}
-
-.about-feature svg {
-  width: 18px;
-  height: 18px;
-  color: var(--warm);
-  flex-shrink: 0;
-}
-
-/* ── SERVICES ── */
-.services { background: var(--black); color: var(--white); }
-
-.services-intro {
-  max-width: 600px;
-  margin: 0 auto 60px;
-  color: var(--gray-light);
-  font-size: 1rem;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2px;
-}
-
-.service-card {
-  background: rgba(255,255,255,0.03);
-  padding: 40px 32px;
-  position: relative;
-  transition: all 0.4s ease;
-  border: 1px solid rgba(255,255,255,0.06);
-}
-
-.service-card:hover {
-  background: rgba(201,169,110,0.06);
-  border-color: rgba(201,169,110,0.15);
-}
-
-.service-icon {
-  font-family: var(--font-script);
-  font-size: 2.5rem;
-  color: var(--warm);
-  margin-bottom: 16px;
-  display: block;
-}
-
-.service-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-}
-
-.service-card p {
-  color: var(--gray-light);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.service-items {
-  list-style: none;
-}
-
-.service-items li {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  font-size: 0.85rem;
-  color: var(--gray-light);
-}
-
-.service-items li span:last-child {
-  color: var(--warm);
-  font-weight: 500;
-}
-
-.services-cta {
-  margin-top: 60px;
-}
-
-/* ── REVIEWS ── */
-.reviews { background: var(--cream); }
-
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  margin-top: 60px;
-}
-
-.review-card {
-  background: var(--white);
-  padding: 36px;
-  position: relative;
-}
-
-.review-card::before {
-  content: '\201C';
-  font-family: var(--font-script);
-  font-size: 4rem;
-  color: var(--warm);
-  opacity: 0.3;
-  position: absolute;
-  top: 12px;
-  left: 24px;
-  line-height: 1;
-}
-
-.review-stars {
-  color: var(--warm);
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-  font-size: 0.9rem;
-}
-
-.review-text {
-  color: var(--gray);
-  font-size: 0.95rem;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.review-author {
-  font-weight: 500;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-/* ── HOURS & LOCATION ── */
-.location { background: var(--white); }
-
-.location-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
-}
-
-.hours-table {
-  width: 100%;
-  margin-top: 32px;
-}
-
-.hours-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-  font-size: 0.9rem;
-}
-
-.hours-row .day { font-weight: 400; }
-.hours-row .time { color: var(--gray); }
-.hours-row.closed .time { color: var(--warm-dark); font-style: italic; }
-
-.location-info {
-  margin-top: 32px;
-}
-
-.location-detail {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 24px;
-  align-items: flex-start;
-}
-
-.location-detail svg {
-  width: 20px;
-  height: 20px;
-  color: var(--warm);
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.location-detail p {
-  color: var(--gray);
-  font-size: 0.9rem;
-}
-
-.location-detail a {
-  color: var(--warm-dark);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.location-detail a:hover { color: var(--warm); }
-
-.map-container {
-  width: 100%;
-  aspect-ratio: 1;
-  background: var(--cream);
-  position: relative;
-  overflow: hidden;
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  filter: grayscale(1) contrast(1.1);
-  transition: filter 0.4s;
-}
-
-.map-container:hover iframe { filter: grayscale(0); }
-
-/* ── SOCIALS STRIP ── */
-.socials-strip {
-  background: var(--black);
-  padding: 60px 0;
-  text-align: center;
-}
-
-.socials-strip .section-label { margin-bottom: 24px; }
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--white);
-  text-decoration: none;
-  font-size: 0.85rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.social-link:hover { color: var(--warm); }
-
-.social-link svg {
-  width: 20px;
-  height: 20px;
-}
-
-/* ── FOOTER ── */
-footer {
-  background: var(--black);
-  border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 40px 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.footer-logo img { height: 40px; opacity: 0.7; }
-
-.footer-text {
-  color: var(--gray);
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-
-.footer-badges {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.footer-badge {
-  font-size: 0.7rem;
-  color: var(--gray-light);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 6px 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-
-/* ── WHATSAPP FLOAT ── */
-.whatsapp-float {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 56px;
-  height: 56px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 28px rgba(37,211,102,0.5);
-}
-
-.whatsapp-float svg {
-  width: 28px;
-  height: 28px;
-  fill: #fff;
-}
-
-/* ── ANIMATIONS ── */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .nav-links.open {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    inset: 0;
-    background: rgba(10,10,10,0.98);
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    z-index: 999;
+<meta property="og:title" content="The Beauty Midrand · Face, Body &amp; Nails">
+<meta property="og:description" content="Facials, massage and nails in Vorna Valley, Midrand. Rated 5.0 from 665 reviews. Book online on Fresha.">
+<meta property="og:image" content="https://thebeauty.co.za/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Beauty's gold brush ring on black, with the words Face, Body, Nails">
+<meta property="og:locale" content="en_ZA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Beauty Midrand · Face, Body &amp; Nails">
+<meta name="twitter:description" content="Facials, massage and nails in Vorna Valley, Midrand. Rated 5.0 from 665 reviews.">
+<meta name="twitter:image" content="https://thebeauty.co.za/og-image.jpg">
+
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preload" href="assets/fonts/anton.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/bodoni-italic.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/outfit.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>
+  (function (d) {
+    var c = 'js';
+    try { if (matchMedia('(prefers-reduced-motion: reduce)').matches) c += ' rm'; } catch (e) {}
+    d.className = c;
+  })(document.documentElement);
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "@id": "https://thebeauty.co.za/#salon",
+  "name": "The Beauty Midrand",
+  "alternateName": "The Beauty",
+  "slogan": "Where beauty meets artistry",
+  "description": "A woman-owned salon in Vorna Valley, Midrand for facials and peels, massage, nails, pedicures and waxing.",
+  "url": "https://thebeauty.co.za/",
+  "image": "https://thebeauty.co.za/og-image.jpg",
+  "logo": "https://thebeauty.co.za/images/logo-dark.jpg",
+  "telephone": "+27815942178",
+  "priceRange": "R60–R850",
+  "currenciesAccepted": "ZAR",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "230 Pretorius Street",
+    "addressLocality": "Vorna Valley, Midrand",
+    "addressRegion": "Gauteng",
+    "postalCode": "1686",
+    "addressCountry": "ZA"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -26.0067, "longitude": 28.1134 },
+  "hasMap": "https://www.google.com/maps?q=230+Pretorius+Street,+Vorna+Valley,+Midrand",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "08:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/thebeautymidrand/",
+    "https://www.facebook.com/thebeautymidrand/",
+    "https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a"
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": "https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a"
   }
-  .nav-links.open a { font-size: 1.1rem; }
-  .mobile-toggle { display: flex; }
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .about-visual { order: -1; }
-  .about-rating { right: 10px; }
-  .services-grid { grid-template-columns: 1fr; }
-  .location-grid { grid-template-columns: 1fr; }
-  .section-pad { padding: 60px 0; }
-  .footer-content { flex-direction: column; text-align: center; }
 }
-/* ── WHATSAPP FLOATING BUTTON ── */
-.whatsapp-float {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  z-index: 999;
-  width: 60px;
-  height: 60px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(37,211,102,0.5);
-}
-
-.whatsapp-float svg {
-  width: 32px;
-  height: 32px;
-  fill: #fff;
-}
-
-.whatsapp-float .tooltip {
-  position: absolute;
-  right: 72px;
-  background: var(--black);
-  color: var(--white);
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-
-.whatsapp-float:hover .tooltip { opacity: 1; }
-</style>
+</script>
 </head>
 <body>
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="ring" viewBox="0 0 200 200"><path fill="currentColor" d="M64.7 22.8 67.8 20.6 71.3 18.9 74.3 15.7 78.3 15.5 82 14.5 85.7 12.9 89.7 13 93.5 12.3 97.4 11.6 101.3 11.5 105.3 11.4 109.2 11.2 113.1 12.1 116.8 13.7 120.7 14 124.7 14.4 128.2 16.6 132.2 17 135.6 19 138.8 21.4 142.9 22.1 145.1 26 148.8 27.4 151.9 29.8 155.5 31.5 157.8 34.7 161.2 36.9 163.3 40.2 166.5 42.6 168.3 46.1 170.8 49.1 172.7 52.4 175.4 55.4 177.7 58.5 179.5 62 181.2 65.5 182 69.4 183.4 73 185.2 76.6 185.6 80.5 187.5 84.1 188.2 88 189.4 91.9 189.3 95.9 189.3 99.8 189.1 103.8 189.2 107.8 189.7 111.8 189.7 115.9 188.9 119.9 186.5 123.4 187.2 127.8 186 131.7 184.3 135.4 183.1 139.3 181.6 143.2 179.9 146.9 177.9 150.5 175.6 153.9 173 157.1 170.6 160.5 168.2 163.9 164.8 166.3 161.9 169.3 159.4 172.7 155.6 174.7 152.3 177.2 148.5 178.8 145.5 181.8 141.9 184.1 138.2 185.9 134 186.7 130.5 189 126.4 189.9 122.3 190.9 118.3 192 114.1 192 110 192.5 105.9 193.1 101.8 193.8 97.6 192.4 93.5 192.9 89.3 193 85.4 191.1 81.5 189.9 77.4 189.3 73.6 187.9 69.8 186.4 66.5 183.5 62.5 182.9 59.2 180.4 55.6 178.6 52.2 176.5 48.9 174.2 46.2 171.2 43.3 168.5 40 166.2 37.4 163.2 34.5 160.5 32.6 157 29.4 154.5 27.7 150.8 25.7 147.4 23.2 144.4 21.8 140.7 19.1 137.6 17.4 134 16.2 130.2 14.7 126.6 12.3 123.1 12.7 118.9 11.7 115 11.2 111.1 10.3 107.2 10.1 103.2 10.4 99.2 10.7 95.2 10.4 91.2 11.2 87.3 11.8 83.3 13.4 79.6 14.7 75.9 15.8 72.1 17.2 68.4 18.6 64.8 19.7 60.9 22.7 58 24.6 54.6 26.3 51.1 29.1 48.3 31.3 45 33.7 42 36.3 39 38.8 36 42.2 33.8 44.6 30.6 47.6 28.1 50.8 25.7 54.2 23.6 57.4 21.4 61.3 20.2 64.8 18.6 68 15.8 72 15 75.7 13.8 80 14.3 83.6 12.5 87.6 12.4 91.4 11.1 95.4 12.1 95.4 12.1 91.6 13.3 87.7 13.3 84.1 15.3 80.4 16.1 77 18.2 73.4 19.3 70.2 21.5 66.5 22.4 63.2 24.1 59.9 25.8 57.1 28.6 54 30.5 50.4 31.9 48.1 35 44.9 36.9 42.1 39.4 39.8 42.4 37.6 45.4 35 48 32.7 50.8 30.5 53.9 29 57.2 26.8 60.3 25.2 63.6 23.7 67 22.2 70.3 20 73.5 19.8 77.4 17.9 80.7 17.5 84.4 17 88.1 16.6 91.8 16.8 95.6 16 99.2 16.1 103 16.8 106.7 17 110.4 17 114.1 17.9 117.8 19.5 121.2 20.2 124.8 21 128.5 23.3 131.6 24.6 135 26.6 138.2 28 141.6 30 144.7 31.6 148.1 33.9 151 36.1 154 38.8 156.6 41.3 159.3 44.2 161.6 46.6 164.5 49.4 166.9 53 168.3 56 170.4 58.9 172.8 62 174.9 65.4 176.4 68.7 178.3 72.1 179.8 75.4 181.8 79.1 182.7 82.9 183.1 86.4 185 90.2 184.9 94 185.8 97.8 185.8 101.6 186.1 105.5 187.2 109.4 186.8 113.2 186 117 185.4 121 185.4 124.5 183.6 128.3 182.7 132.1 181.9 135.6 180.2 139 178.2 142.2 176 145.6 174.1 149.2 172.5 152.1 169.9 154.9 167.3 157.3 164.1 160.4 161.9 163.1 159.1 165.4 156.1 167.7 153 169.8 149.8 171.7 146.5 173.8 143.4 175.7 140 177.5 136.7 177.9 132.7 180.1 129.5 180.4 125.6 182.5 122.3 182.4 118.4 183.8 114.9 184 111.1 184.4 107.3 184.7 103.6 184.5 99.8 184.9 96.1 184.1 92.3 183.6 88.6 183.8 84.8 182.3 81.3 181.2 77.7 181 73.8 179.8 70.2 177.6 67.1 175.9 63.7 174.6 60.2 172.6 57 170.4 54 168 51.1 166.5 47.5 164.3 44.5 161.7 41.8 159 39.1 156.4 36.4 153 34.5 149.9 32.5 147.1 30 144.2 27.5 140.6 26.3 137.7 23.7 133.9 22.9 130.4 21.7 127 19.9 123.3 19.4 119.8 18 116.2 16.8 112.4 16.9 108.8 15.8 105 16.3 101.2 16.1 97.5 15.8 93.9 17.2 90.2 17.7 86.6 18.3 82.8 18.2 79.3 19.6 75.9 21 72.2 21.4 68.6 22.4 64.8 23.2ZM106.6 17.9 111.2 18.4 115.9 18.8 120.6 19.4 125.2 20.7 129.7 22.1 134 24 138.2 26.2 142.2 28.7 146.3 31 150.2 33.7 153.7 36.8 157.3 39.9 160.2 43.7 163.2 47.2 166.1 50.9 168.5 54.9 170.8 59 170.7 59.1 168 55.2 165.1 51.7 162.1 48.2 159 44.8 155.6 41.7 152.3 38.6 148.9 35.5 145.1 32.9 141.4 30.1 137.4 27.8 133.2 25.8 129 23.8 124.7 22.2 120.1 21.4 115.7 19.8 111.2 18.8 106.6 18.2ZM182.3 89.1 183.4 93.8 184 98.6 184.4 103.4 184.4 108.3 184.3 113.2 183 117.9 181.9 122.6 181 127.4 179.6 132.2 177.6 136.6 175.4 141.1 173.2 145.5 170.3 149.5 167.6 153.6 164.7 157.6 161.3 161.2 157.8 164.8 154.3 168.4 150.4 171.5 146.3 174.4 142.1 177.2 137.6 179.4 133 181.5 128.3 183.4 123.5 184.8 118.5 185.7 113.6 186.5 108.6 186.9 103.5 186.5 98.6 186.4 98.6 186.1 103.5 186.2 108.5 185.8 113.3 184.8 118.3 184.4 123 183 127.6 181.2 132.2 179.6 136.6 177.3 141.1 175.4 145.4 172.9 149.3 170 153 166.7 156.7 163.5 160.3 160.3 163.5 156.5 166.5 152.7 168.9 148.5 171.7 144.6 174 140.3 176 135.9 178 131.5 179.2 126.8 180.2 122.1 181.6 117.6 182.3 112.9 182.6 108.1 182.8 103.3 182.6 98.6 182.4 93.9 182.5 89.1ZM64.9 175.6 61.4 172.3 57.1 170.5 53.2 168 49.6 165.2 46.2 162 42.9 158.9 40.2 155.1 36.6 152.2 33.9 148.4 31.4 144.6 29.1 140.6 26.6 136.8 25.2 132.4 25.5 132.2 27.4 136.4 29.5 140.4 31.9 144.3 34.7 147.9 37.9 151.1 40.5 154.8 43.5 158.2 47.1 161.1 50.3 164.3 54 166.9 57.6 169.7 61.3 172.5 65.1 175.3ZM21.3 124.6 20.1 120 18.8 115.5 17.4 110.9 17.1 106.1 17 101.4 16.6 96.6 17.3 91.8 18 87.1 18.6 82.4 20.2 77.9 21.7 73.4 23.2 68.9 25.4 64.6 27.5 60.4 30.1 56.5 32.5 52.4 35.9 49 39.2 45.7 41.5 41.3 45.6 38.8 49.1 35.7 52.8 32.7 56.8 30.2 60.7 27.6 60.8 27.7 56.9 30.4 53.3 33.4 49.5 36.2 46.2 39.4 42.9 42.8 39.7 46.1 36.7 49.6 33.8 53.3 31.3 57.2 29.3 61.4 26.6 65.2 24.5 69.4 23 73.8 21.6 78.3 20.4 82.8 19.1 87.3 18.8 92 18 96.6 18.2 101.3 18.6 106 19.3 110.6 19.5 115.3 20.5 119.9 21.6 124.5ZM116.3 10.3 121.4 11 126.3 12.2 131.3 13.5 135.8 15.8 140.5 17.8 145 20.2 149.2 23.1 153.5 25.7 157.3 29.2 161.7 31.8 164.7 36 168.4 39.5 171.3 43.6 174.7 47.4 177.5 51.7 180 56.1 182.1 60.7 183.6 65.5 186 70 187.4 74.9 187.5 74.8 185.5 70.2 183.7 65.5 181.1 61.1 178.6 56.9 175.8 52.7 173.1 48.5 169.9 44.7 166.8 40.9 163.4 37.3 159.8 33.9 156.3 30.4 152.2 27.6 148.1 24.8 144.2 21.6 139.6 19.7 135.3 17 130.5 15.5 125.9 13.4 121.2 11.7 116.3 10.5ZM190.7 108.5 190.4 113.8 189.4 119 188.9 124.3 187.6 129.5 185.4 134.4 183.8 139.5 181.1 144.2 178.6 148.9 176.2 153.8 172.7 157.9 169.9 162.6 165.6 166 161.7 169.7 157.6 173.3 157.6 173.2 161.6 169.6 165.4 165.8 169 161.8 172.1 157.4 175.3 153.1 177.9 148.5 180.5 143.9 182.9 139.1 184.3 134 186.3 129.1 187.8 124 188.7 118.8 189.6 113.6 190.6 108.5ZM135.4 188 130.3 189.7 125.3 191.7 120.1 193 114.7 193.6 109.4 194.5 104.1 194.3 98.8 194.1 93.4 193.9 88.2 193.1 83 191.9 77.8 191 73.1 188.4 68.2 186.5 63.4 184.6 59 181.8 54.6 179 50.2 176.4 45.9 173.4 42.2 169.8 38.3 166.6 34.7 162.9 31.5 158.9 28.4 154.8 25.1 151 22.8 146.4 20.1 142 18.1 137.3 15.9 132.7 14.3 127.9 14.3 127.9 16 132.7 18.1 137.3 20.9 141.6 23.3 146.1 26.3 150.1 29.4 154.1 32.5 158.1 36.2 161.5 39.3 165.5 43.2 168.7 47.1 171.9 50.9 175.2 55.2 177.9 59.5 180.6 64.1 183 68.5 185.6 73.3 187.5 78.3 188.9 83.3 190.4 88.3 192 93.6 192.3 98.8 192.9 104 193.2 109.3 193.1 114.6 192.8 119.8 191.6 124.9 190.4 130.2 189.4 135.1 187.4ZM10.6 114.1 9.3 108.7 9.2 103.2 8.5 97.7 9.1 92.2 9.6 86.7 11.4 81.5 12.4 76.1 14.4 70.9 17.4 66.3 17.2 66.2 15 71.1 13.4 76.3 12.4 81.7 11.3 87 10.5 92.3 10.5 97.7 10.6 103.1 10.5 108.6 11.1 114ZM45 28.6 49.1 24.9 53.6 21.8 58.2 18.7 63 16 68 13.5 73.4 12 78.6 9.8 84.1 9 89.6 7.9 95.1 7.1 95.2 7.5 89.7 8.5 84.2 9.6 78.9 11.3 73.8 13.4 68.6 15.2 63.8 17.8 58.9 20.2 54.3 22.9 49.5 25.5 45 28.6ZM88.7 20 93.3 18.9 97.9 18.5 102.6 18.4 107.3 18.4 112 19.1 116.6 20.1 121.2 21.1 125.6 22.7 130.3 23.6 134.4 25.9 138.7 27.8 142.5 30.6 146.5 33 150.1 36 153.6 39.2 157.1 42.2 159.8 46.1 163.3 49.2 166.5 52.7 168.6 56.9 170.9 60.9 173.2 65 175.5 69.1 176.7 73.6 176.3 73.7 175 69.3 173.1 65 170.5 61.2 168.3 57 165.2 53.5 162.8 49.6 159.8 46.1 156.5 42.9 153.2 39.6 149.5 36.8 145.7 34.2 142 31.5 138.3 28.7 133.9 26.9 129.9 24.6 125.5 22.9 121 21.9 116.5 20.7 111.9 20.1 107.2 19.8 102.6 19.5 98 19.2 93.4 20 88.8 20.4ZM179.3 82.7 179.9 87.3 180.9 91.8 181.5 96.4 181.7 101.1 182.1 105.8 181.8 110.5 180.9 115.1 180 119.7 179.4 124.5 177.8 128.9 175.9 133.3 174 137.6 171.9 141.9 169.5 146 166.9 149.9 164.2 153.9 161.1 157.6 157.9 161.2 154.5 164.6 150.9 167.8 146.8 170.5 143 173.4 138.8 176 134.3 177.8 129.9 179.8 125.2 181.3 120.6 182.7 115.7 183 110.9 183.9 110.9 183.9 115.7 183 120.3 181.7 125 180.7 129.4 178.7 133.9 176.9 138.4 175.1 142.4 172.5 146.3 169.6 150.4 167.2 154 164 157.4 160.7 160.6 157.1 163.6 153.4 166.5 149.7 169.2 145.8 171.3 141.5 173.5 137.4 175.4 133 176.9 128.6 178.2 124.1 179 119.5 180.2 115 180.5 110.3 181.1 105.7 181.1 101.1 180.5 96.5 180.2 91.9 180 87.2 178.9 82.7ZM102.5 184.6 97.7 184.1 93 183.8 88.3 183 83.7 182.2 79.3 180.4 74.7 179.4 70.6 177 66.5 174.7 62.2 173 58.3 170.6 54.6 167.8 51.2 164.6 47.9 161.5 44.3 158.7 41.2 155.4 38 152.1 35.1 148.6 32.8 144.6 30.4 140.8 28 137 26 132.8 23.9 128.8 22.7 124.3 21.3 120 20.1 115.6 19 111.1 18.8 106.5 18.4 101.9 18.6 97.3 18.4 92.7 19.5 88.2 20.4 83.7 20.9 79.1 23.2 75 24.8 70.8 25 70.8 23.1 75 22.1 79.4 20.8 83.8 19.9 88.3 19.8 92.8 19.5 97.4 19.7 101.9 19.5 106.4 20.3 110.9 20.6 115.5 22 119.8 23.5 124.1 25 128.3 26.8 132.5 28.7 136.5 30.7 140.6 33.6 144.1 36.2 147.7 38.9 151.4 41.7 154.9 44.9 158 48 161.4 51.7 164 55.1 167 58.9 169.6 62.6 172.2 66.5 174.7 70.6 176.9 75 178.4 79.3 180.3 83.9 181.3 88.4 182.3 93 183.5 97.7 183.7 102.5 184.1ZM28.5 64.3 30.7 60.5 32.8 56.5 35.5 53 38.3 49.6 40.9 45.9 43.9 42.6 47.3 39.8 50.8 37 54 33.8 57.7 31.3 61.4 28.8 65.3 26.5 69.5 24.9 73.7 23.1 77.8 21.3 82.2 20.1 86.6 18.8 91.2 18.2 95.7 17.5 95.7 17.8 91.2 18.7 86.7 19.5 82.3 20.6 78 22 73.8 23.5 69.7 25.3 65.6 27.2 61.6 29.2 58.1 32 54.5 34.5 50.9 37.1 47.8 40.3 44.4 43.2 41.4 46.4 38.5 49.8 35.6 53.1 33 56.6 30.7 60.5 28.4 64.3ZM63.9 17.8 68.4 15.3 73.2 13.4 78 11.7 83 10.4 88.1 9.2 93.3 8.6 98.4 7.9 103.7 8.1 108.9 8 114.2 8.2 119.2 9.8 124.4 10.7 129.2 12.7 134.1 14.7 138.9 16.8 143.5 19 148.1 21.5 152.2 24.7 156.5 27.7 156.3 27.9 152 25 147.8 22.1 143.4 19.3 138.8 16.9 133.9 15 129 13.3 124.1 11.8 119.1 10.5 113.9 9.7 108.8 9 103.6 8.8 98.5 8.7 93.3 8.9 88.1 9.6 83.2 11.2 78.2 12.3 73.4 14.2 68.5 15.7 64 18.1ZM184.7 65.1 186.5 70 188.4 74.8 189.8 79.9 190.5 85.1 191.7 90.3 192.5 95.5 192.6 100.8 192.5 106.1 192.7 111.4 191.6 116.6 190.7 121.9 189.8 127.2 188.2 132.3 186.4 137.4 184.2 142.3 181.4 146.8 179.3 151.9 176 156.2 173.1 160.8 169.7 165 165.6 168.6 161.7 172.3 157.7 176.1 153.3 179.3 148.7 182.3 144.1 185.3 139.2 187.7 134 189.4 129 191.7 123.6 192.7 118.3 194.1 112.9 194.7 112.8 194.5 118.2 193.8 123.5 192.3 128.8 191.2 133.9 189.1 139.1 187.3 143.8 184.6 148.6 182 153.2 179.1 157.3 175.6 161.3 171.9 165.6 168.6 168.8 164.2 172.2 160 175.5 155.8 178.6 151.4 181.4 146.9 183.3 141.8 185.5 137 187.6 132.1 188.9 126.9 190.4 121.8 191 116.5 191.9 111.3 192.1 106 192.3 100.8 191.8 95.5 191 90.3 190.1 85.2 189.2 80 187.7 75.1 186.4 70 184.4 65.2ZM90.4 193.8 85.1 192.8 79.8 192.1 74.8 190.2 69.9 188.2 65 186.3 60.3 184 55.9 181.1 51.8 177.8 47.7 174.6 43.1 172 39.6 168.1 36 164.5 32.1 161.1 28.8 157.1 25.2 153.3 25.8 152.9 29.1 156.9 32.6 160.7 35.9 164.6 39.5 168.3 43.6 171.5 47.7 174.6 51.9 177.6 56 180.8 60.5 183.6 65.3 185.5 70 187.9 74.9 189.9 79.9 191.7 85.1 192.8 90.4 193.7ZM13.7 133 12.7 127.9 10.7 123.1 9.4 118.1 8.3 113.1 8.1 107.9 7.5 102.8 8.2 97.6 8 92.5 8.6 87.3 9.5 82.3 10.5 77.2 12.5 72.4 13.7 67.4 16 62.8 18.3 58.2 21.1 53.9 23.9 49.6 26.6 45.3 29.7 41.2 33.3 37.5 36.7 33.7 40.5 30.3 44.6 27.2 48.6 24 52.9 21.2 57.1 18.2 61.7 15.8 66.4 13.7 71.2 11.6 71.2 11.8 66.6 14.2 62 16.5 57.5 18.9 53.1 21.6 48.9 24.5 45 27.7 41.2 31.1 37.4 34.5 34.1 38.3 30.5 41.9 27.3 45.8 24.5 50 21.4 54.1 19.3 58.7 17 63.2 14.9 67.8 13.1 72.6 11.3 77.4 10.5 82.5 9.5 87.5 9.1 92.5 8.7 97.6 8.3 102.7 9 107.8 9.7 112.9 10.5 117.9 11.6 122.9 13 127.8 14.6 132.7Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.6 2.83 5.93 6.5.8-4.78 4.47 1.22 6.46L12 17.1l-5.77 3.16 1.22-6.46L2.67 9.33l6.5-.8Z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.2A8.8 8.8 0 1 0 12 3.2Z"/><path fill="currentColor" d="M9.1 7.6c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3 0 .5.4.8 1 1.5 1.7 2 .5.4 1 .6 1.4.8.2.1.3 0 .4-.1l.7-.8c.1-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.2.1.9-.2 1.6-.3.6-1.4 1.2-2 1.2-.5.1-1.2.1-3.3-.9-2.3-1.2-3.8-3.6-3.9-3.8-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.2Z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.4 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H7.5v3h2.6V21Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M6.6 3.5h2.6l1.4 4-2 1.3a11 11 0 0 0 6.6 6.6l1.3-2 4 1.4V17a3 3 0 0 1-3.2 3A15.5 15.5 0 0 1 3.5 6.7 3 3 0 0 1 6.6 3.5Z"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M12 3.2S6 10 6 14.2a6 6 0 0 0 12 0C18 10 12 3.2 12 3.2Z"/><path d="M9.2 14.6a2.9 2.9 0 0 0 2.4 2.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-woman" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="9" r="5"/><path d="M12 14v7M9 18h6"/></g></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5M10 20v-5h4v5"/></g></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4m-6.5 7.5 2 2 4-4"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><path d="M4 16.5V12l2-5h12l2 5v4.5Z"/><path d="M4 12h16M6 16.5V19m12-2.5V19"/><circle cx="8" cy="14.2" r=".6"/><circle cx="16" cy="14.2" r=".6"/></g></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><rect x="5" y="3.5" width="14" height="14" rx="3"/><path d="M5 11h14M7.5 17.5V20m9-2.5V20"/><circle cx="8.5" cy="14.3" r=".6"/><circle cx="15.5" cy="14.3" r=".6"/></g></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c.6 4.9 2.9 8 8 10-5.1 2-7.4 5.1-8 10-.6-4.9-2.9-8-8-10 5.1-2 7.4-5.1 8-10Z"/></symbol>
+</svg>
 
-<!-- NAVIGATION -->
-<nav id="navbar">
-  <div class="container">
-    <a href="#" class="nav-logo">
-      <img src="images/logo-dark.jpg" alt="The Beauty Midrand - Premium Beauty Salon Logo">
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" class="nav-cta">Book Now</a></li>
-    </ul>
-    <div class="mobile-toggle" id="mobileToggle" onclick="document.getElementById('navLinks').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="cursor" aria-hidden="true"><div class="cursor__ring"></div><span class="cursor__label"></span></div>
+
+<header class="nav" data-nav>
+  <a class="nav__brand" href="#top" aria-label="The Beauty, back to the top">
+    <svg class="nav__mark" aria-hidden="true"><use href="#ring"/></svg>
+    <span class="nav__word">The Beauty</span>
+  </a>
+  <nav class="nav__links" aria-label="Main">
+    <a href="#rituals" data-brush>Rituals</a>
+    <a href="#menu" data-brush>Menu</a>
+    <a href="#reviews" data-brush>Reviews</a>
+    <a href="#visit" data-brush>Visit</a>
+  </nav>
+  <div class="nav__end">
+    <a class="btn btn--gold btn--sm" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener" data-cursor="Book"><span>Book</span></a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="overlay"><span class="nav__bars" aria-hidden="true"><i></i><i></i></span><span class="sr-only">Menu</span></button>
   </div>
-</nav>
+</header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <img src="images/logo-dark.jpg" alt="The Beauty Midrand - Face, Body & Nails Logo" class="hero-logo">
-    <h1 class="hero-tagline">Where beauty meets artistry</h1>
-    <div class="hero-sub">230 Pretorius Street · Vorna Valley · Midrand</div>
-    <div class="hero-buttons">
-      <a href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" class="btn btn-primary">Book Appointment</a>
-      <a href="#services" class="btn btn-outline">Our Services</a>
-    </div>
+<div class="overlay" id="overlay" hidden>
+  <nav class="overlay__links" aria-label="Mobile">
+    <a href="#rituals"><em>ii.</em> Rituals</a>
+    <a href="#menu"><em>iii.</em> Menu &amp; prices</a>
+    <a href="#reviews"><em>iv.</em> Reviews</a>
+    <a href="#team"><em>v.</em> The team</a>
+    <a href="#visit"><em>vi.</em> Visit</a>
+  </nav>
+  <div class="overlay__foot">
+    <span class="status" data-status><i class="status__dot"></i><span class="status__text">Mon–Sat from 08:00</span></span>
+    <a class="btn btn--gold" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span>Book on Fresha</span></a>
+    <a class="btn btn--ghost" href="https://wa.me/27815942178" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp us</span></a>
   </div>
-  <div class="scroll-indicator">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-  </div>
-</section>
+</div>
 
-<!-- ABOUT -->
-<section class="about section-pad" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-visual reveal">
-        <div class="about-visual-box">
-          <img src="images/logo-light.jpg" alt="The Beauty Midrand Premium Logo Light Variant" style="width:100%;height:100%;object-fit:contain;padding:40px;">
-        </div>
-        <div class="about-visual-accent"></div>
-        <div class="about-rating">
-          <div class="about-rating-number">5.0</div>
-          <div class="about-rating-stars">★★★★★</div>
-          <div class="about-rating-count">575+ Reviews</div>
-        </div>
-      </div>
-      <div class="about-text reveal">
-        <span class="section-label">Welcome</span>
-        <h2 class="section-title">Your Beauty,<br>Our Passion</h2>
-        <br>
-        <p>At The Beauty Midrand, every visit is a luxurious escape tailored to you. Nestled in the heart of Vorna Valley, our salon combines premium products with expert care to elevate both your appearance and well-being.</p>
-        <p>From stunning gel nails and soothing facials to full body treatments, our skilled team delivers an exceptional experience every time — whether you visit us in-salon or enjoy our mobile services from the comfort of your home.</p>
-        <div class="about-features">
-          <div class="about-feature">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-            Premium Products
-          </div>
-          <div class="about-feature">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-            Woman-Owned
-          </div>
-          <div class="about-feature">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-            Mobile Services
-          </div>
-          <div class="about-feature">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-            Instant Booking
-          </div>
-          <div class="about-feature">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-            Parking Available
-          </div>
-          <div class="about-feature">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-            Near Public Transport
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<a class="float-wa" href="https://wa.me/27815942178" target="_blank" rel="noopener" aria-label="Chat to The Beauty on WhatsApp" data-cursor="Chat"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
 
-<!-- SERVICES -->
-<section class="services section-pad" id="services">
-  <div class="container text-center">
-    <span class="section-label reveal">What We Offer</span>
-    <h2 class="section-title reveal" style="color:var(--white)">Our Services</h2>
-    <p class="services-intro reveal">From head to toe, we offer a comprehensive range of beauty treatments crafted to make you look and feel extraordinary.</p>
+<div id="smooth-wrapper">
+<div id="smooth-content">
+<main id="main">
 
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <span class="service-icon">Face</span>
-        <h3>Facials</h3>
-        <p>Rejuvenating facial treatments using premium skincare products to cleanse, nourish, and restore your natural glow.</p>
-        <ul class="service-items">
-          <li><span>Express Facial</span><span>from R250</span></li>
-          <li><span>Deep Cleanse Facial</span><span>from R350</span></li>
-          <li><span>Pedi Peel</span><span>from R200</span></li>
-          <li><span>Tinting</span><span>from R80</span></li>
-        </ul>
-      </div>
-      <div class="service-card reveal">
-        <span class="service-icon">Nails</span>
-        <h3>Nail Services</h3>
-        <p>Stunning nail art, gel polish, overlays, and enhancements to complement your style and personality.</p>
-        <ul class="service-items">
-          <li><span>Gel Polish Hands</span><span>from R190</span></li>
-          <li><span>Gel Polish Feet</span><span>R190</span></li>
-          <li><span>Overlay + Gel Polish</span><span>from R330</span></li>
-          <li><span>Soak Off</span><span>R60</span></li>
-        </ul>
-      </div>
-      <div class="service-card reveal">
-        <span class="service-icon">Body</span>
-        <h3>Body Treatments</h3>
-        <p>Indulgent massages, waxing, and body treatments designed to relax, refresh, and revitalise.</p>
-        <ul class="service-items">
-          <li><span>Full Body Massage</span><span>from R350</span></li>
-          <li><span>Back &amp; Neck Massage</span><span>from R200</span></li>
-          <li><span>Waxing (various)</span><span>from R40</span></li>
-          <li><span>Paraffin Wax</span><span>from R80</span></li>
-        </ul>
-      </div>
-      <div class="service-card reveal">
-        <span class="service-icon">Hands</span>
-        <h3>Manicures &amp; Pedicures</h3>
-        <p>Complete hand and foot care with attention to every detail, including treatments for gents, teens, and kiddies.</p>
-        <ul class="service-items">
-          <li><span>Manicure</span><span>from R150</span></li>
-          <li><span>Pedicure</span><span>from R200</span></li>
-          <li><span>Gents Treatments</span><span>from R150</span></li>
-          <li><span>Kiddies / Teens</span><span>from R100</span></li>
-        </ul>
-      </div>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero__stage" aria-hidden="true">
+      <canvas class="hero__canvas"></canvas>
+      <div class="hero__ringbox"><svg class="hero__fallback"><use href="#ring"/></svg></div>
     </div>
 
-    <div class="services-cta reveal">
-      <p style="color:var(--gray-light);margin-bottom:20px;font-size:0.9rem;">128+ services available · Full price list on Fresha</p>
-      <a href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" class="btn btn-primary">View All &amp; Book</a>
+    <p class="hero__corner hero__corner--tl"><span>Vorna Valley</span><span>Midrand</span></p>
+    <p class="hero__corner hero__corner--tr"><span class="status" data-status="short"><i class="status__dot"></i><span class="status__text">Mon–Sat from 08:00</span></span><span>Woman-owned salon</span></p>
+
+    <div class="hero__center">
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__line" aria-hidden="true">The</span>
+        <span class="hero__line" aria-hidden="true">Beauty</span>
+        <span class="sr-only">The Beauty: a face, body and nails salon in Vorna Valley, Midrand</span>
+      </h1>
+      <p class="hero__sub" aria-hidden="true">Face <i></i> Body <i></i> Nails</p>
     </div>
-  </div>
-</section>
 
-<!-- REVIEWS -->
-<section class="reviews section-pad" id="reviews">
-  <div class="container text-center">
-    <span class="section-label reveal">Testimonials</span>
-    <h2 class="section-title reveal">What Our Clients Say</h2>
-
-    <div class="reviews-grid">
-      <div class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Always amazing! Order is restored. Happy to try the facial as well.</p>
-        <div class="review-author">Tumi K.</div>
+    <div class="hero__foot">
+      <p class="hero__tag">Where beauty meets <em>artistry.</em></p>
+      <div class="hero__ctas">
+        <a class="btn btn--gold" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener" data-magnetic data-cursor="Book"><span>Book on Fresha</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost" href="https://wa.me/27815942178" target="_blank" rel="noopener" data-magnetic data-cursor="Chat"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp us</span></a>
       </div>
-      <div class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Tshiamo takes so much care in providing her service. She is patient and has such amazing skills.</p>
-        <div class="review-author">Dimpho M.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Absolutely loved my nails, as always. Brilliant work from Keke.</p>
-        <div class="review-author">Lerato M.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Refreshing and therapeutic!</p>
-        <div class="review-author">Pleasure M.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Awesome service.</p>
-        <div class="review-author">Tshegofatso M.</div>
-      </div>
-      <div class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">Service is always great.</p>
-        <div class="review-author">Nkgodi M.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT / LOCATION -->
-<section class="location section-pad" id="contact">
-  <div class="container">
-    <div class="text-center" style="margin-bottom:60px;">
-      <span class="section-label reveal">Find Us</span>
-      <h2 class="section-title reveal">Visit The Beauty</h2>
-    </div>
-    <div class="location-grid">
-      <div class="reveal">
-        <h3 style="font-family:var(--font-display);font-size:1.2rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">Opening Hours</h3>
-        <div class="hours-table">
-          <div class="hours-row"><span class="day">Monday</span><span class="time">8:00 AM – 6:00 PM</span></div>
-          <div class="hours-row"><span class="day">Tuesday</span><span class="time">8:00 AM – 6:00 PM</span></div>
-          <div class="hours-row"><span class="day">Wednesday</span><span class="time">8:00 AM – 6:00 PM</span></div>
-          <div class="hours-row"><span class="day">Thursday</span><span class="time">8:00 AM – 6:00 PM</span></div>
-          <div class="hours-row"><span class="day">Friday</span><span class="time">8:00 AM – 6:00 PM</span></div>
-          <div class="hours-row"><span class="day">Saturday</span><span class="time">8:00 AM – 5:00 PM</span></div>
-          <div class="hours-row closed"><span class="day">Sunday</span><span class="time">Closed</span></div>
-        </div>
-
-        <div class="location-info">
-          <div class="location-detail">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-            <p>230 Pretorius Street, Vorna Valley<br>Midrand, 1686, Gauteng</p>
-          </div>
-          <div class="location-detail">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
-            <p><a href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank">Book online via Fresha</a></p>
-          </div>
-          <div class="location-detail">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
-            <p><a href="https://thebeauty.co.za">thebeauty.co.za</a></p>
-          </div>
-          <div class="location-detail">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            <p><a href="https://wa.me/27815942178" target="_blank">081 594 2178</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="map-container reveal">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.47!2d28.1134!3d-26.0067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDAwJzI0LjEiUyAyOMKwMDYnNDguMSJF!5e0!3m2!1sen!2sza!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SOCIAL STRIP -->
-<section class="socials-strip">
-  <div class="container">
-    <span class="section-label">Follow Us</span>
-    <div class="social-links">
-      <a href="https://www.instagram.com/thebeautymidrand/" target="_blank" class="social-link">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        Instagram
-      </a>
-      <a href="https://www.facebook.com/thebeautymidrand/" target="_blank" class="social-link">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        Facebook
+      <a class="chip" href="#reviews">
+        <span class="chip__stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        <span><strong>5.0</strong> from 665 reviews on Fresha</span>
       </a>
     </div>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="images/logo-dark.jpg" alt="The Beauty Midrand Custom Logo">
+    <a class="hero__scroll" href="#welcome" aria-label="Scroll to the welcome section"><span>Scroll</span><i aria-hidden="true"></i></a>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <section class="marquee" aria-label="What we do">
+    <p class="sr-only">Face, body and nails: facials, peels, massage, manicures, pedicures, gel, brows and waxing.</p>
+    <div class="marquee__row marquee__row--a" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Face</span><svg><use href="#i-sparkle"/></svg><span>Body</span><svg><use href="#i-sparkle"/></svg><span>Nails</span><svg><use href="#i-sparkle"/></svg><span>Hands</span><svg><use href="#i-sparkle"/></svg><span>Feet</span><svg><use href="#i-sparkle"/></svg><span>Brows</span><svg><use href="#i-sparkle"/></svg><span>Massage</span><svg><use href="#i-sparkle"/></svg><span>Waxing</span><svg><use href="#i-sparkle"/></svg>
       </div>
-      <div class="footer-badges">
-        <span class="footer-badge">Woman-Owned</span>
-        <span class="footer-badge">★ 5.0 Rated</span>
-      </div>
-      <div class="footer-text">&copy; 2026 The Beauty Midrand. All rights reserved.</div>
     </div>
-  </div>
-</footer>
+    <div class="marquee__row marquee__row--b" aria-hidden="true">
+      <div class="marquee__track">
+        <span>peels</span><i></i><span>gel polish</span><i></i><span>paraffin dips</span><i></i><span>Swedish massage</span><i></i><span>aromatherapy</span><i></i><span>lash &amp; brow tints</span><i></i><span>pedi peels</span><i></i><span>nail art</span><i></i>
+      </div>
+    </div>
+  </section>
 
-<script>
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
-});
+  <!-- ============ WELCOME ============ -->
+  <section class="welcome theme-bone" id="welcome" aria-labelledby="welcome-title">
+    <div class="wrap">
+      <p class="label"><em>i.</em> Welcome</p>
+      <div class="welcome__grid">
+        <h2 class="display welcome__title" id="welcome-title" data-split>Every visit is a luxurious escape, <em>tailored to you.</em></h2>
+        <div class="badge" aria-hidden="true">
+          <svg class="badge__text" viewBox="0 0 200 200">
+            <defs><path id="badge-path" d="M100 100m-78 0a78 78 0 1 1 156 0a78 78 0 1 1-156 0"/></defs>
+            <text><textPath href="#badge-path" textLength="488">Five stars · 665 reviews · Fresha · Five stars · 665 reviews · Fresha ·</textPath></text>
+          </svg>
+          <span class="badge__num">5.0</span>
+          <span class="badge__stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+        </div>
+        <div class="welcome__body">
+          <p class="lede">The Beauty is a woman-owned salon in Vorna Valley, Midrand, for face, body and nails.</p>
+          <p>We work with premium products and give every appointment the time it deserves, whether it’s a quick gel refresh, an hour-long massage or your first peel. Book online in under a minute and your slot is confirmed straight away.</p>
+          <a class="link-more" href="#rituals" data-brush><span>Explore the rituals</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <ul class="features" role="list">
+        <li><svg aria-hidden="true"><use href="#i-drop"/></svg><span>Premium products</span></li>
+        <li><svg aria-hidden="true"><use href="#i-woman"/></svg><span>Woman-owned</span></li>
+        <li><svg aria-hidden="true"><use href="#i-home"/></svg><span>Mobile services</span></li>
+        <li><svg aria-hidden="true"><use href="#i-bolt"/></svg><span>Instant confirmation</span></li>
+        <li><svg aria-hidden="true"><use href="#i-car"/></svg><span>Parking available</span></li>
+        <li><svg aria-hidden="true"><use href="#i-bus"/></svg><span>Near public transport</span></li>
+      </ul>
+    </div>
+  </section>
 
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 100);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
+  <!-- ============ RITUALS ============ -->
+  <section class="rituals" id="rituals" aria-labelledby="rituals-title">
+    <div class="wrap rituals__head">
+      <p class="label"><em>ii.</em> Rituals</p>
+      <h2 class="display" id="rituals-title" data-split>Three rituals. <em>One standard of care.</em></h2>
+    </div>
+    <div class="rituals__pin">
+      <div class="rituals__hud" aria-hidden="true">
+        <span class="rituals__count"><b data-ritual-index>01</b> / 03</span>
+        <span class="rituals__bar"><i></i></span>
+        <span class="rituals__hint">Keep scrolling</span>
+      </div>
+      <div class="rituals__track">
 
-reveals.forEach(el => observer.observe(el));
+        <article class="ritual" id="ritual-face" aria-labelledby="ritual-face-title">
+          <div class="ritual__art" data-cursor="Play">
+            <canvas data-art="pearl" aria-hidden="true"></canvas>
+            <svg class="ritual__ring" aria-hidden="true"><use href="#ring"/></svg>
+          </div>
+          <div class="ritual__copy">
+            <p class="ritual__num" aria-hidden="true">01</p>
+            <h3 class="ritual__title" id="ritual-face-title">Face</h3>
+            <p class="ritual__sub">Peels, facials &amp; brows</p>
+            <p class="ritual__text">Treatments that resurface, brighten and calm, from a gentle initiation peel to the 30% power peel, plus lash and brow tints to finish.</p>
+            <ul class="mini" role="list">
+              <li><span>Initiation peel</span><span class="mini__t">45 min</span><b>R500</b></li>
+              <li><span>Rapid rejuvenation</span><span class="mini__t">1 hr</span><b>R550</b></li>
+              <li><span>30% power peel</span><span class="mini__t">1 hr</span><b>R600</b></li>
+              <li><span>Back cleanse</span><span class="mini__t">45 min</span><b>R400</b></li>
+            </ul>
+            <a class="link-more" href="#menu" data-tab="face" data-brush><span>Full face menu</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
 
-// Close mobile nav on link click
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.getElementById('navLinks').classList.remove('open');
-  });
-});
-</script>
+        <article class="ritual" id="ritual-body" aria-labelledby="ritual-body-title">
+          <div class="ritual__art" data-cursor="Touch">
+            <canvas data-art="silk" aria-hidden="true"></canvas>
+            <svg class="ritual__ring" aria-hidden="true"><use href="#ring"/></svg>
+          </div>
+          <div class="ritual__copy">
+            <p class="ritual__num" aria-hidden="true">02</p>
+            <h3 class="ritual__title" id="ritual-body-title">Body</h3>
+            <p class="ritual__sub">Massage &amp; waxing</p>
+            <p class="ritual__text">Swedish and aromatherapy massage, focused back and neck work, and a foot massage for tired feet. An hour to put the week down.</p>
+            <ul class="mini" role="list">
+              <li><span>Swedish full body</span><span class="mini__t">1 hr</span><b>R380</b></li>
+              <li><span>Aromatherapy full body</span><span class="mini__t">1 hr</span><b>R400</b></li>
+              <li><span>Back &amp; neck</span><span class="mini__t">45 min</span><b>R350</b></li>
+              <li><span>Foot massage</span><span class="mini__t">30 min</span><b>R170</b></li>
+            </ul>
+            <a class="link-more" href="#menu" data-tab="massage" data-brush><span>Massage &amp; waxing menu</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
 
-<!-- WHATSAPP FLOATING BUTTON -->
-<a href="https://wa.me/27815942178" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
+        <article class="ritual" id="ritual-nails" aria-labelledby="ritual-nails-title">
+          <div class="ritual__art ritual__art--nails">
+            <svg class="nails" viewBox="0 0 400 400" aria-hidden="true">
+              <defs>
+                <linearGradient id="nail-fill" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" class="ns ns--0"/>
+                  <stop offset=".45" class="ns ns--1"/>
+                  <stop offset="1" class="ns ns--2"/>
+                </linearGradient>
+                <linearGradient id="nail-gloss" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+                  <stop offset=".5" stop-color="#fff" stop-opacity=".85"/>
+                  <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="nail-stick" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#EAD5A6"/>
+                  <stop offset="1" stop-color="#9A7840"/>
+                </linearGradient>
+                <clipPath id="nail-clip"><path d="M28 0C44 10 56 38 56 66v42a12 12 0 0 1-12 12H12A12 12 0 0 1 0 108V66C0 38 12 10 28 0Z"/></clipPath>
+              </defs>
+              <g class="nails__fan" transform="translate(200 332)">
+                <g transform="rotate(-30)"><g class="nail"><rect class="nail__stick" x="-2" y="-134" width="4" height="134" rx="2"/><g transform="translate(-28 -252)"><path class="nail__body" d="M28 0C44 10 56 38 56 66v42a12 12 0 0 1-12 12H12A12 12 0 0 1 0 108V66C0 38 12 10 28 0Z"/><path class="nail__tip" clip-path="url(#nail-clip)" d="M-4-4h64v40C42 25 14 25-4 36Z"/><g clip-path="url(#nail-clip)"><rect class="nail__gloss" x="0" y="-10" width="12" height="140"/></g></g></g></g>
+                <g transform="rotate(-15)"><g class="nail"><rect class="nail__stick" x="-2" y="-134" width="4" height="134" rx="2"/><g transform="translate(-28 -252)"><path class="nail__body" d="M28 0C44 10 56 38 56 66v42a12 12 0 0 1-12 12H12A12 12 0 0 1 0 108V66C0 38 12 10 28 0Z"/><path class="nail__tip" clip-path="url(#nail-clip)" d="M-4-4h64v40C42 25 14 25-4 36Z"/><g clip-path="url(#nail-clip)"><rect class="nail__gloss" x="0" y="-10" width="12" height="140"/></g></g></g></g>
+                <g><g class="nail"><rect class="nail__stick" x="-2" y="-134" width="4" height="134" rx="2"/><g transform="translate(-28 -252)"><path class="nail__body" d="M28 0C44 10 56 38 56 66v42a12 12 0 0 1-12 12H12A12 12 0 0 1 0 108V66C0 38 12 10 28 0Z"/><path class="nail__tip" clip-path="url(#nail-clip)" d="M-4-4h64v40C42 25 14 25-4 36Z"/><g clip-path="url(#nail-clip)"><rect class="nail__gloss" x="0" y="-10" width="12" height="140"/></g></g></g></g>
+                <g transform="rotate(15)"><g class="nail"><rect class="nail__stick" x="-2" y="-134" width="4" height="134" rx="2"/><g transform="translate(-28 -252)"><path class="nail__body" d="M28 0C44 10 56 38 56 66v42a12 12 0 0 1-12 12H12A12 12 0 0 1 0 108V66C0 38 12 10 28 0Z"/><path class="nail__tip" clip-path="url(#nail-clip)" d="M-4-4h64v40C42 25 14 25-4 36Z"/><g clip-path="url(#nail-clip)"><rect class="nail__gloss" x="0" y="-10" width="12" height="140"/></g></g></g></g>
+                <g transform="rotate(30)"><g class="nail"><rect class="nail__stick" x="-2" y="-134" width="4" height="134" rx="2"/><g transform="translate(-28 -252)"><path class="nail__body" d="M28 0C44 10 56 38 56 66v42a12 12 0 0 1-12 12H12A12 12 0 0 1 0 108V66C0 38 12 10 28 0Z"/><path class="nail__tip" clip-path="url(#nail-clip)" d="M-4-4h64v40C42 25 14 25-4 36Z"/><g clip-path="url(#nail-clip)"><rect class="nail__gloss" x="0" y="-10" width="12" height="140"/></g></g></g></g>
+                <circle class="nails__rivet" r="9"/>
+              </g>
+            </svg>
+            <svg class="ritual__ring" aria-hidden="true"><use href="#ring"/></svg>
+          </div>
+          <div class="ritual__copy">
+            <p class="ritual__num" aria-hidden="true">03</p>
+            <h3 class="ritual__title" id="ritual-nails-title">Nails</h3>
+            <p class="ritual__sub">Gel, enhancements &amp; pedicures</p>
+            <p class="ritual__text">Gel polish, overlays, tips and full pedicures, done neatly with a careful eye for colour. Try a shade:</p>
+            <div class="shades" role="group" aria-label="Preview a gel shade">
+              <button type="button" class="shade" style="--c:#D9A48F" data-shade="#D9A48F" aria-pressed="true">Nude</button>
+              <button type="button" class="shade" style="--c:#E8A6A8" data-shade="#E8A6A8" aria-pressed="false">Blush</button>
+              <button type="button" class="shade" style="--c:#8E2F4F" data-shade="#8E2F4F" aria-pressed="false">Berry</button>
+              <button type="button" class="shade" style="--c:#5A1420" data-shade="#5A1420" aria-pressed="false">Oxblood</button>
+              <button type="button" class="shade" style="--c:#1B2340" data-shade="#1B2340" aria-pressed="false">Midnight</button>
+              <button type="button" class="shade" style="--c:#D8C08F" data-shade="#D8C08F" aria-pressed="false">Champagne</button>
+              <button type="button" class="shade" style="--c:#F26B5B" data-shade="#F26B5B" aria-pressed="false">Coral</button>
+              <button type="button" class="shade shade--french" style="--c:#EDCFC4" data-shade="#EDCFC4" data-french aria-pressed="false">French</button>
+            </div>
+            <ul class="mini" role="list">
+              <li><span>Gel polish, hands</span><span class="mini__t">1 hr</span><b>R300</b></li>
+              <li><span>Overlay with gel polish</span><span class="mini__t">2 hr</span><b><small>from</small> R340</b></li>
+              <li><span>Full pedi with gel polish</span><span class="mini__t">1 hr 30 min</span><b>R390</b></li>
+            </ul>
+            <a class="link-more" href="#menu" data-tab="hands" data-brush><span>Every nail treatment</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="menu theme-bone" id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="menu__head">
+        <p class="label"><em>iii.</em> The menu</p>
+        <h2 class="display" id="menu-title" data-split>Everything, <em>priced plainly.</em></h2>
+        <p class="menu__note">Prices in rand, as listed on our Fresha booking page. Tap any treatment to book it.</p>
+      </div>
+      <div class="menu__body">
+        <div class="tabs" role="tablist" aria-label="Treatment categories">
+          <button class="tab" role="tab" type="button" id="tab-face" aria-controls="panel-face" aria-selected="true">Face &amp; brows</button>
+          <button class="tab" role="tab" type="button" id="tab-hands" aria-controls="panel-hands" aria-selected="false" tabindex="-1">Hands</button>
+          <button class="tab" role="tab" type="button" id="tab-enhance" aria-controls="panel-enhance" aria-selected="false" tabindex="-1">Nail enhancements</button>
+          <button class="tab" role="tab" type="button" id="tab-feet" aria-controls="panel-feet" aria-selected="false" tabindex="-1">Feet</button>
+          <button class="tab" role="tab" type="button" id="tab-massage" aria-controls="panel-massage" aria-selected="false" tabindex="-1">Massage</button>
+          <button class="tab" role="tab" type="button" id="tab-waxing" aria-controls="panel-waxing" aria-selected="false" tabindex="-1">Waxing</button>
+          <button class="tab" role="tab" type="button" id="tab-soak" aria-controls="panel-soak" aria-selected="false" tabindex="-1">Soak-offs</button>
+          <button class="tab" role="tab" type="button" id="tab-family" aria-controls="panel-family" aria-selected="false" tabindex="-1">Gents, teens &amp; kids</button>
+          <button class="tab" role="tab" type="button" id="tab-extras" aria-controls="panel-extras" aria-selected="false" tabindex="-1">Add-ons</button>
+          <svg class="tabs__ring" aria-hidden="true" focusable="false"><path/></svg>
+        </div>
+        <div class="panels">
+        <div class="panel" role="tabpanel" id="panel-face" aria-labelledby="tab-face" tabindex="0">
+          <h3 class="panel__title">Face &amp; brows</h3>
+          <div class="group"><h3 class="group__title">Facials &amp; peels</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Double whammy</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R850</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Initiation peel treatment</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R500</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Rapid rejuvenation treatment</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R550</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">30% power peel treatment</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R600</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Back cleanse treatment</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R400</span></a></li>
+          </ul></div>
+          <div class="group"><h3 class="group__title">Tinting</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Lash tint</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R80</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Brow tint</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R60</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Brow wax or tweeze &amp; tint</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R140</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-hands" aria-labelledby="tab-hands" tabindex="0" data-inactive>
+          <h3 class="panel__title">Hands</h3>
+          <div class="group"><h3 class="group__title">Manicures &amp; gel</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Buff &amp; paint (no gel)</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R160</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel polish, hands</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>from</small> R300</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Full mani (no paint)</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>from</small> R210</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Full mani with gel polish</span><span class="item__time">1 hr 15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R360</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-enhance" aria-labelledby="tab-enhance" tabindex="0" data-inactive>
+          <h3 class="panel__title">Nail enhancements</h3>
+          <div class="group"><h3 class="group__title">Overlays, tips &amp; fills</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Overlay with gel polish</span><span class="item__time">2 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>from</small> R340</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Tips with polygel or acrylic &amp; gel polish</span><span class="item__time">2 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>from</small> R360</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Soft gel tips</span><span class="item__time">1 hr 15–1 hr 30</span><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>from</small> R340</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Fills, polygel or acrylic with gel</span><span class="item__time">1 hr 30–1 hr 45</span><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>from</small> R330</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-feet" aria-labelledby="tab-feet" tabindex="0" data-inactive>
+          <h3 class="panel__title">Feet</h3>
+          <div class="group"><h3 class="group__title">Pedicures</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Buff &amp; paint</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R170</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel polish, feet</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R200</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Full pedi (no paint)</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R290</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Full pedi with nail polish</span><span class="item__time">1 hr 15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R320</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Full pedi with gel polish</span><span class="item__time">1 hr 30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R390</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Full pedi, gel polish &amp; paraffin wax</span><span class="item__time">1 hr 30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R450</span></a></li>
+          </ul></div>
+          <div class="group"><h3 class="group__title">Pedi peel</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Pedi peel (no paint)</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R350</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Pedi peel with nail polish</span><span class="item__time">1 hr 30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R400</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Pedi peel with gel polish</span><span class="item__time">1 hr 45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R450</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-massage" aria-labelledby="tab-massage" tabindex="0" data-inactive>
+          <h3 class="panel__title">Massage</h3>
+          <div class="group"><h3 class="group__title">Massages</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Back &amp; neck</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R300</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Back &amp; neck</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R350</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Swedish full body</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R380</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Aromatherapy full body</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R400</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Foot massage</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R170</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-waxing" aria-labelledby="tab-waxing" tabindex="0" data-inactive>
+          <h3 class="panel__title">Waxing</h3>
+          <div class="group"><h3 class="group__title">Face</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Brow</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R110</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Lip or chin</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R100</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Brow &amp; lip</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R160</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Brow, lip &amp; chin</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R220</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Nose</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R90</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Full face</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R270</span></a></li>
+          </ul></div>
+          <div class="group"><h3 class="group__title">Body</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Underarm</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R130</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Stomach</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R130</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Back (ladies)</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R200</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Bikini</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R200</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Brazilian</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R250</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Hollywood</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R290</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-soak" aria-labelledby="tab-soak" tabindex="0" data-inactive>
+          <h3 class="panel__title">Soak-offs</h3>
+          <div class="group"><h3 class="group__title">Soak-offs</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel soak-off, hands</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R70</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel soak-off, feet</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R70</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Acrylic or polygel soak-off</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R90</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Soak-off only</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R120</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Soak-off, buff &amp; shine</span><span class="item__time">40 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R140</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Soak-off, buff &amp; paint</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R170</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-family" aria-labelledby="tab-family" tabindex="0" data-inactive>
+          <h3 class="panel__title">Gents, teens &amp; kids</h3>
+          <div class="group"><h3 class="group__title">Gents</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gents mani</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R200</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gents pedi</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R290</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gents mani with gel</span><span class="item__time">1 hr 10 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R280</span></a></li>
+          </ul></div>
+          <div class="group"><h3 class="group__title">Teens</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel polish, hands</span><span class="item__time">1 hr</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R290</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel polish, feet</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R190</span></a></li>
+          </ul></div>
+          <div class="group"><h3 class="group__title">Kiddies</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Mini mani</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R130</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Mini pedi</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R160</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel polish, hands</span><span class="item__time">45 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R270</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Gel polish, feet</span><span class="item__time">30 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R170</span></a></li>
+          </ul></div>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-extras" aria-labelledby="tab-extras" tabindex="0" data-inactive>
+          <h3 class="panel__title">Add-ons</h3>
+          <div class="group"><h3 class="group__title">Little extras</h3><ul class="items">
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Diamanté, per nail</span><span class="item__time">5 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R5</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Nail art</span><span class="item__time">5 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R10</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Nail repair</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R45</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Paraffin dip</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R120</span></a></li>
+            <li><a class="item" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener"><span class="item__name">Reglaze</span><span class="item__time">15 min</span><span class="item__dots" aria-hidden="true"></span><span class="item__price">R100</span></a></li>
+          </ul></div>
+        </div>
+        </div>
+      </div>
+      <div class="menu__foot">
+        <p>Not sure what to book? Send us a message and we’ll help you choose.</p>
+        <a class="btn btn--ink" href="https://wa.me/27815942178?text=Hi%20The%20Beauty%2C%20I%27d%20like%20some%20help%20choosing%20a%20treatment." target="_blank" rel="noopener" data-magnetic data-cursor="Chat"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>Ask on WhatsApp</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap reviews__head">
+      <p class="label"><em>iv.</em> Kind words</p>
+      <div class="reviews__intro">
+        <h2 class="display" id="reviews-title" data-split>Loved, <em>and then some.</em></h2>
+        <div class="score">
+          <p class="score__num" aria-hidden="true">5.0</p>
+          <div class="score__meta">
+            <span class="score__stars" aria-hidden="true"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+            <p><span class="sr-only">Rated 5.0 out of 5. </span>Average rating from <strong><span data-count="665">665</span> reviews</strong> on Fresha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rail" role="region" aria-label="Client reviews. Scroll sideways for more." tabindex="0" data-cursor="Drag">
+      <ul class="rail__track" role="list">
+        <li class="review"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>Always amazing! Order is restored. Happy to try the facial as well.</p></blockquote><p class="review__by">Tumi K.</p></li>
+        <li class="review"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>Tshiamo takes so much care in providing her service. She is patient and has such amazing skills.</p></blockquote><p class="review__by">Dimpho M. <span>with Tshiamo</span></p></li>
+        <li class="review"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>Absolutely loved my nails, as always. Brilliant work from Keke.</p></blockquote><p class="review__by">Lerato M. <span>with Keke</span></p></li>
+        <li class="review review--short"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>Refreshing and therapeutic!</p></blockquote><p class="review__by">Pleasure M.</p></li>
+        <li class="review"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>I love my nails! Definitely coming back for the quality of her work.</p></blockquote><p class="review__by">Gaopalelwe L. <span>with Tshiamo</span></p></li>
+        <li class="review"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>Very creative when it comes to colour coordination. Very neat and passionate.</p></blockquote><p class="review__by">Livhalani N. <span>with Keke</span></p></li>
+        <li class="review review--short"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>Awesome service.</p></blockquote><p class="review__by">Tshegofatso M.</p></li>
+        <li class="review review--short"><svg class="review__mark" aria-hidden="true"><use href="#i-sparkle"/></svg><blockquote><p>Service is always great.</p></blockquote><p class="review__by">Nkgodi M.</p></li>
+      </ul>
+    </div>
+    <div class="wrap reviews__controls">
+      <div class="rail__progress" aria-hidden="true"><i></i></div>
+      <div class="rail__buttons">
+        <button type="button" class="round" data-rail="prev" aria-label="Previous reviews"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <button type="button" class="round" data-rail="next" aria-label="More reviews"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+      <a class="link-more" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener" data-brush><span>Read them all on Fresha</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section class="team" id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <p class="label"><em>v.</em> The team</p>
+      <h2 class="display team__title" id="team-title" data-split>You’re in <em>good hands.</em></h2>
+      <div class="team__grid">
+        <article class="member">
+          <div class="member__mono" aria-hidden="true"><svg><use href="#ring"/></svg><span>T</span></div>
+          <div class="member__copy">
+            <h3 class="member__name">Tshiamo</h3>
+            <p class="member__role">Nail technician &amp; therapist</p>
+            <blockquote class="member__quote"><p>“She is patient and has such amazing skills.”</p><footer>Dimpho M., on Fresha</footer></blockquote>
+          </div>
+        </article>
+        <article class="member">
+          <div class="member__mono" aria-hidden="true"><svg><use href="#ring"/></svg><span>K</span></div>
+          <div class="member__copy">
+            <h3 class="member__name">Keke</h3>
+            <p class="member__role">Nails &amp; colour</p>
+            <blockquote class="member__quote"><p>“Very creative when it comes to colour coordination.”</p><footer>Livhalani N., on Fresha</footer></blockquote>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MOBILE ============ -->
+  <section class="mobile" id="mobile" aria-labelledby="mobile-title">
+    <svg class="mobile__ring" aria-hidden="true"><use href="#ring"/></svg>
+    <div class="wrap mobile__inner">
+      <h2 class="mobile__title" id="mobile-title" aria-label="Can’t come in? We’ll come to you."><span class="mobile__big">Can’t <span class="nw">come in?</span></span> <em>We’ll come to you.</em></h2>
+      <p class="mobile__text">We offer mobile services too. Send us a WhatsApp with what you’d like, where and when, and we’ll take it from there.</p>
+      <a class="btn btn--ink" href="https://wa.me/27815942178?text=Hi%20The%20Beauty%2C%20I%27d%20like%20to%20book%20a%20mobile%20appointment." target="_blank" rel="noopener" data-magnetic data-cursor="Chat"><svg aria-hidden="true"><use href="#i-chat"/></svg><span>Ask about a mobile visit</span></a>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="visit theme-bone" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <p class="label"><em>vi.</em> Visit</p>
+      <div class="visit__grid">
+        <div class="visit__intro">
+          <h2 class="display" id="visit-title" data-split>Find us in <em>Vorna Valley.</em></h2>
+          <address class="visit__address">
+            <svg aria-hidden="true"><use href="#i-pin"/></svg>
+            <span>230 Pretorius Street<br>Vorna Valley, Midrand<br>1686</span>
+          </address>
+          <ul class="visit__perks" role="list">
+            <li><svg aria-hidden="true"><use href="#i-car"/></svg>Parking available</li>
+            <li><svg aria-hidden="true"><use href="#i-bus"/></svg>Near public transport</li>
+          </ul>
+          <div class="visit__ctas">
+            <a class="btn btn--ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=230+Pretorius+Street+Vorna+Valley+Midrand" target="_blank" rel="noopener" data-magnetic data-cursor="Go"><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Get directions</span></a>
+            <a class="btn btn--line" href="tel:+27815942178" data-magnetic><svg aria-hidden="true"><use href="#i-phone"/></svg><span>081 594 2178</span></a>
+          </div>
+        </div>
+        <div class="hours">
+          <p class="hours__status status status--big" data-status><i class="status__dot"></i><span class="status__text">Open Monday to Saturday</span></p>
+          <table class="hours__table">
+            <caption class="sr-only">Opening hours</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Monday</th><td>08:00 – 17:00</td></tr>
+              <tr data-day="2"><th scope="row">Tuesday</th><td>08:00 – 18:00</td></tr>
+              <tr data-day="3"><th scope="row">Wednesday</th><td>08:00 – 18:00</td></tr>
+              <tr data-day="4"><th scope="row">Thursday</th><td>08:00 – 18:00</td></tr>
+              <tr data-day="5"><th scope="row">Friday</th><td>08:00 – 18:00</td></tr>
+              <tr data-day="6"><th scope="row">Saturday</th><td>08:00 – 15:00</td></tr>
+              <tr data-day="0"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map showing The Beauty at 230 Pretorius Street, Vorna Valley, Midrand" src="https://www.google.com/maps?q=230+Pretorius+Street,+Vorna+Valley,+Midrand&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <span class="map__pin" aria-hidden="true"><svg><use href="#ring"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <div class="footer__cta">
+        <p class="footer__line">Ready when <em>you are.</em></p>
+        <a class="btn btn--gold" href="https://www.fresha.com/a/the-beauty-midrand-midrand-230-pretorius-street-mfqm803a" target="_blank" rel="noopener" data-magnetic data-cursor="Book"><span>Book on Fresha</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h2 class="footer__h">Visit</h2>
+          <p>230 Pretorius Street<br>Vorna Valley, Midrand</p>
+        </div>
+        <div>
+          <h2 class="footer__h">Hours</h2>
+          <p>Mon 08:00–17:00<br>Tue–Fri 08:00–18:00<br>Sat 08:00–15:00<br>Sun closed</p>
+        </div>
+        <div>
+          <h2 class="footer__h">Say hello</h2>
+          <ul class="footer__links" role="list">
+            <li><a href="https://wa.me/27815942178" target="_blank" rel="noopener" data-brush><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/thebeautymidrand/" target="_blank" rel="noopener" data-brush><svg aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></li>
+            <li><a href="https://www.facebook.com/thebeautymidrand/" target="_blank" rel="noopener" data-brush><svg aria-hidden="true"><use href="#i-fb"/></svg>Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">The Beauty</p>
+    <div class="wrap footer__base">
+      <img class="footer__logo" src="images/logo-dark.jpg" alt="The Beauty logo: a brushstroke ring around the words The Beauty, with Face, Body, Nails beneath" width="826" height="960" loading="lazy">
+      <p>© <span data-year>2026</span> The Beauty Midrand. Woman-owned.</p>
+      <p>Website by <a href="https://clearcutweb.co.za/" target="_blank" rel="noopener">ClearCut Web</a></p>
+      <a class="footer__top-link" href="#top">Back to top <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/ScrollSmoother.min.js" defer></script>
+<script src="assets/vendor/SplitText.min.js" defer></script>
+<script src="assets/vendor/DrawSVGPlugin.min.js" defer></script>
+<script src="assets/js/ring.js" defer></script>
+<script src="assets/js/rituals.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
